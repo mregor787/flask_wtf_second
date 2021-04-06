@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Оформление каюты</h2>
+    <div class="table_div">
+        <table class="table">
+            <tr class="table-secondary">
+                <td>Цвет стен</td>
+                <td>Эмблема</td>
+            </tr>
+            <tr>
+                <td id="{{ age + '_' + sex }}"></td>
+                <td><img src="{{ url_for('static', filename='img/' + age + '.png') }}"></td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}
